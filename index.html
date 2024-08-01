@@ -3,48 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travelify</title>
 </head>
 <body>
-    <nav>
-        <header>
-            <div class="logo-icon"></div>
-        </header>
-        <section class="nav-container">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Our Package</a>
-            <a class="nav-item">Call Us</a>
-        </section>
-    </nav>
+    <header>
+        <div class="logo"><b>Travelify</b></div>
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#packages">Our Package</a></li>
+                <li><a href="#call">Call Us</a></li>
+            </ul>
+        </nav>
+    </header>    
 
-    <main>
-        <article class="main-title">
-            <header>
-                <h1>Your Trusted Travel Agent</h1>
-            </header>
-            <p>Your happness is our happines.</p>
-        </article>
-        <section class="main-content">
-            <article class="main-content-item">
-                <div class="main-content-banner">
+    <section id="banner">
+        <div class="slide">
+            <img src="asset\banner1.avif" alt="Slide 1">
+            <img src="asset\banner2.jpg" alt="Slide 2">
+            <img src="asset\banner3.jpg" alt="Slide 3">
+        </div>
+    </section>
 
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>Your Trusted Travel Agent's</h2>
+            <p>Your happiness is our happiness</p>
+            <div class="content-wrapper">
+                <div class="content-left">
+                    <h3>Customer Testimonials</h3>
+                    <blockquote>"Liburan jadi menyenangkan bersama Travelify."</blockquote>
+                    <p><strong>Jennie</strong></p>
+                    <hr>
+                    <blockquote>"Travelify membuat liburan kami di Bali menjadi pengalaman tak terlupakan. Semua detail perjalanan diatur dengan sempurna. Terima kasih, Travelify!"</blockquote>
+                    <p><strong>Andi & Sinta</strong></p>
+                    <hr>
+                    <blockquote>"Pelayanan yang luar biasa! Dari mulai perencanaan hingga perjalanan selesai, tim Travelify sangat membantu. Kami pasti akan menggunakan jasa Travelify lagi!"</blockquote>
+                    <p><strong>Sandy</strong></p>
+                    <hr>
                 </div>
-                <div class="main-item">
-                    <div class="item-icon">
-
-                    </div>
-                    <div>
-                        <h3>Lorem Ipsum Dolor</h3>
-                        <p>Lorem Ipsum Dolor</p>
-                    </div>
+                <div class="content-right">
+                    <h3>Contact Us</h3>
+                    <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                    <form id="contactForm">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="First and last name" required>
+                        
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        
+                        <label for="interest">What are you interested in?</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select option</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Dieng">Dieng</option>
+                            <option value="Raja Ampat">Raja Ampat</option>
+                            <option value="Borobudur">Borobudur</option>
+                        </select>
+                        
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-            </article>
-            <form class="main-content-item">
-                <input type="text"/>
-                <button type="button">Submit</button>
-            </form>
-        </section>
-    </main>
+            </div>
+            <div class="why">
+                <h2 class="whyyy">Why Travelify?</h2>
+                <ul>
+                    <li><b>Harga Terbaik:</b> Dapatkan penawaran terbaik dengan harga yang kompetitif. Kami memastikan Anda mendapatkan nilai lebih dari setiap perjalanan.</li>
+                    <li><b>Pelayanan Prima:</b> Tim profesional kami siap membantu Anda 24/7, mulai dari perencanaan perjalanan hingga Anda kembali dengan kenangan indah.</li>
+                    <li><b>Destinasi Beragam:</b> Jelajahi destinasi populer dan tersembunyi di seluruh dunia dengan panduan ahli dari Travelify.</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="packages">
+        <h2>Our Package</h2>
+        <div class="packages-list">
+            <div class="package-item">
+                <img src="asset\bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Nikmati keindahan pantai, budaya, dan keramahan Bali dalam satu paket lengkap.</p>
+            </div>
+            <div class="package-item">
+                <img src="asset\japan.jpeg" alt="Japan">
+                <h3>Japan</h3>
+                <p>Rasakan pesona modern dan tradisional Jepang, dari Tokyo yang sibuk hingga kuil-kuil bersejarah di Kyoto.</p>
+            </div>
+            <div class="package-item">
+                <img src="asset\singapore.jpeg" alt="Singapore">
+                <h3>Singapore</h3>
+                <p>Jelajahi kemegahan kota modern Singapura dengan berbagai atraksi menarik dan wisata belanja.</p>
+            </div>
+            <div class="package-item">
+                <img src="asset\dieng.webp" alt="Bandung">
+                <h3>Dieng</h3>
+                <p>Temukan keajaiban alam dan budaya di Dataran Tinggi Dieng dengan pemandangan yang memukau.</p>
+            </div>
+            <div class="package-item">
+                <img src="asset\rajaampat.jpg" alt="Surabaya">
+                <h3>Raja Ampat</h3>
+                <p>Selami keindahan bawah laut dan panorama alam yang menakjubkan di Raja Ampat.</p>
+            </div>
+            <div class="package-item">
+                <img src="asset\borobudur.jpg" alt="Third Feature">
+                <h3>Borobudur</h3>
+                <p>Kunjungi candi Borobudur, salah satu situs warisan dunia yang menawarkan sejarah dan keindahan arsitektur.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="call">
+        <h2>Travelify - Making Dreams Travel</h2>
+        <p>Dengan Travelify, perjalanan impian Anda menjadi lebih mudah dan menyenangkan.</p>
+        <button>Call Us</button>
+    </section>
+
+    <footer>
+        <hr>
+        <p>© 2024 Travelify</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
